@@ -1,0 +1,83 @@
+table.main-table{
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  text-align: center;
+  background: linear-gradient(to right, red, yellow);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+table.main-table .head{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+table.main-table .heroes{
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table,th,td{
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: .4rem 1rem;
+}
+
+button{
+  border: none;
+  color: white;
+  transition: .2s all ease-in-out;
+  margin: 0.5rem;
+  outline: none;
+}
+
+input[type="text"]{
+  border: none;
+  background: none;
+  outline: none;
+  padding-left: 1rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  border-bottom: 2px solid #254fc4;
+  width: 60%;
+}
+
+button:disabled, button[disabled]{
+  background-color: #c9c9c9;
+}
+
+button:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+button.edit{
+  background-color: #25c42a;
+  padding: 1rem 1.3rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button.remove{
+  background-color: #c42525;
+  padding: 1rem 1.3rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button.add{
+  background-color: #254fc4;
+  padding: 1rem 1.3rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}

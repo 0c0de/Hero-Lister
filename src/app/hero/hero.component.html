@@ -1,0 +1,27 @@
+
+<h1>Tabla Super Cookie</h1>
+
+<table class="main-table" *ngIf="!updated">
+  <tr class="head">
+    <th class="childs">Id</th>
+    <th class="childs">Nombre</th>
+    <th class="childs">Superpoder</th>
+    <th class="childs">Acciones</th>
+  </tr>
+  <tr #ifBlock class="heroes" *ngFor="let hero of heroes">
+    <td class="childs">{{hero.id}}</td>
+    <td class="childs">{{hero.name}}</td>
+    <td class="childs">{{hero.superpowers}}</td>
+    <td class="childs">
+      <button type="button" (click) = "onEdit(hero.id)" class="edit">Editar</button>
+      <button type="button" (click) = "onDelete(hero.id)" class="remove">Eliminar</button>
+    </td>
+  </tr>
+</table>
+<br/>
+<input type="text" value={{heroName}} name="superhero" (keyup)="onHeroName($event)" placeholder="Nombre del superheroe">
+<br>
+<input type="text" name="superpowers" value={{heroPower}} (keyup)="onSuperpower($event)" placeholder="Su superpoder">
+<br>
+<button type="button" (click)="onAdd()" class="add">Añadir</button>
+<router-outlet></router-outlet>
